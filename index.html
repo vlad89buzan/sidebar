@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<title>Главная</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+</header>
+		<div class="sidebar">
+			<div class="sidebar__logo-content">
+				<div class="sidebar__logo sidebar-logo">
+					<i class='bx bxl-upwork'></i>
+					<div class="sidebar-logo__name">CodingLab</div>
+
+				</div>
+				<i class='bx bx-menu' id="btn"></i>
+			</div>
+			<ul class="nav__list">
+				<li class="nav__search">
+
+					<i class='bx bx-search-alt'></i>
+					<input type="search" placeholder="Search...">
+
+					<span class="tooltip">Search</span>
+				</li>
+				<li>
+					<a class="nav__link" href="#">
+						<i class='bx bx-user'></i>
+						<span class="nav__link-name">User</span>
+					</a>
+					<span class="tooltip">User</span>
+				</li>
+				<li>
+					<a class="nav__link" href="#">
+						<i class='bx bx-message-rounded'></i>
+						<span class="nav__link-name">Message</span>
+					</a>
+					<span class="tooltip">Message</span>
+				</li>
+				<li>
+					<a class="nav__link" href="#">
+						<i class='bx bxs-pie-chart-alt-2'></i>
+						<span class="nav__link-name">Analytics</span>
+					</a>
+					<span class="tooltip">Analytics</span>
+				</li>
+				<li>
+					<a class="nav__link" href="#">
+						<i class='bx bx-folder'></i>
+						<span class="nav__link-name">File Manager</span>
+					</a>
+					<span class="tooltip">File Manager</span>
+				</li>
+				<li>
+					<a class="nav__link" href="#">
+						<i class='bx bx-cart-download'></i>
+						<span class="nav__link-name">Order</span>
+					</a>
+					<span class="tooltip">Order</span>
+				</li>
+				<li>
+					<a class="nav__link" href="#">
+						<i class='bx bx-heart'></i>
+						<span class="nav__link-name">Saved</span>
+					</a>
+					<span class="tooltip">Saved</span>
+				</li>
+				<li>
+					<a class="nav__link" href="#">
+						<i class='bx bx-cog'></i>
+						<span class="nav__link-name">Settings</span>
+					</a>
+					<span class="tooltip">Settings</span>
+				</li>
+				<li>
+					<a class="nav__link" href="#">
+						<i class='bx bx-grid-alt'></i>
+						<span class="nav__link-name">Dashboard</span>
+					</a>
+					<span class="tooltip">Dashboard</span>
+				</li>
+			</ul>
+			<div class="sidebar__profile profile">
+				<div class="profile__container">
+					<div class="profile__details">
+						<img src="img/sidebar/user.png" alt="user.png">
+						<div class="profile__user user">
+							<div class="user__name">Vladyslav Buzan</div>
+							<div class="user__job">HTML Coder</div>
+						</div>
+					</div>
+					<i class='bx bx-log-out' id="log-out"></i>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<main>
+			ddd
+		</main>
+		<footer></footer>
+	</div>
+
+	<script>
+		let btn = document.querySelector('#btn');
+		let sidebar = document.querySelector('.sidebar');
+		let searchbtn = document.querySelector('.bx-search-alt');
+
+		btn.onclick = function () {
+			sidebar.classList.toggle("active")
+		}
+		searchbtn.onclick = function () {
+			sidebar.classList.toggle("active")
+		}
+	
+
+	</script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
